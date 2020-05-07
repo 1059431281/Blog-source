@@ -2,13 +2,7 @@
   "version":"1.0.0",
   "model":"model.moc",
   "textures":[
-    "textures/school-2017-costume-yellow.png",
-    "textures/school-costume.png",
-    "textures/default-costume.png",
-    "textures/summer-dress-costume-blue.png",
-    "textures/winter-costume-white.png",
-    "textures/pajamas-costume.png",
-    "textures/sukumizu-costume-white.png"
+    "textures/school-2017-costume-yellow.png"
   ],
   "layout":{
     "center_x":0.0,
