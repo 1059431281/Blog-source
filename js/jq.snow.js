@@ -2,7 +2,7 @@
     var interval
     $.fn.snow = function(options){
 
-        var $flake 			= $('<div id="snowbox" />').css({'position': 'fixed', 'top': '-50px','z-index':'9999'}).html('&#B9CDF6;'),
+        var $flake 			= $('<div id="snowbox" />').css({'position': 'fixed', 'top': '-50px','z-index':'9999'}).html('&#B9CDF6'),
             documentHeight 	= $(document).height(),
             documentWidth	= $(document).width(),
             defaults		= {
