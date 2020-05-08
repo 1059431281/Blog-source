@@ -37,6 +37,15 @@
 
         }, options.newOn);
 
+        window.addEventListener("resize",function () {
+            clearInterval(interval);
+
+                $.fn.snow({
+                    minSize: 5,		//雪花的最小尺寸
+                    maxSize: 40, 	//雪花的最大尺寸
+                    newOn: 700		//雪花出现的频率 这个数值越小雪花越多
+                });
+        },false)
     };
 
     // window.addEventListener("resize",function () {
