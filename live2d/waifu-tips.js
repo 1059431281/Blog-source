@@ -239,7 +239,7 @@ function loadModel(){
     // console.log(zxd_modelTexturesId)
     // console.log(zxd_modelTexturesId==0)
     // zxd_modelTexturesId==0?loadlive2d('live2d','http://127.0.0.1:3002/pio/model.json'):loadlive2d('live2d','http://127.0.0.1:3002/pio/model2.json');
-    loadlive2d('live2d','https://cdn.jsdelivr.net/gh/1059431281/CDN/live2d/pio/model.json')
+    loadlive2d('live2d','https://cdn.jsdelivr.net/gh/1059431281/CDN/live2d/pio/model_1.json')
 
 }
 function bug() {
@@ -248,27 +248,30 @@ function bug() {
 
 }
 function loadRandModel(){
+    var modelTexturesRandMode = Math.floor(Math.random() * 7) + 1;
+    loadlive2d('live2d','https://cdn.jsdelivr.net/gh/1059431281/CDN/live2d/pio/model_'+modelTexturesRandMode + '.json')
+    showMessage('我的新衣服好看嘛', 3000, true);
     // var modelId = localStorage.getItem('modelId');
-    if (zxd_modelTexturesId>=6){
-        zxd_modelTexturesId=0
-    }else{
-        zxd_modelTexturesId +=1;
-    }
+    // if (zxd_modelTexturesId>=6){
+    //     zxd_modelTexturesId=0
+    // }else{
+    //     zxd_modelTexturesId +=1;
+    // }
     // var modelTexturesRandMode = 'rand';     // 可选 'rand'(随机), 'switch'(顺序)
     // let a
-    $.ajax({
-            cache: false,
-            url: 'http://127.0.0.1:3002/live2d',
-            dataType: "json",
-            type:"get",
-            data:{
-                texturesId:zxd_modelTexturesId
-            },
-            success: function (result){
-            },
-})
-
-    bug()
+//     $.ajax({
+//             cache: false,
+//             url: 'http://127.0.0.1:3002/live2d',
+//             dataType: "json",
+//             type:"get",
+//             data:{
+//                 texturesId:zxd_modelTexturesId
+//             },
+//             success: function (result){
+//             },
+// })
+//
+//     bug()
 
 
     // $.ajax({
